@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelBuddy - Trip Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="travelbuddy.css">
+</head>
+<body>
+
+<header>
+    <h1>✈️ TravelBuddy</h1>
+    <p>Plan Smart. Travel Better.</p>
+</header>
+
+<section class="summary">
+    <div class="box">
+        <h3>Total Trips</h3>
+        <p id="totalTrips">0</p>
+    </div>
+    <div class="box">
+        <h3>Destinations</h3>
+        <p id="totalDestinations">0</p>
+    </div>
+    <div class="box">
+        <h3>Activities</h3>
+        <p id="totalActivities">0</p>
+    </div>
+</section>
+
+<section class="trip-form">
+    <h2>Add Travel Plan</h2>
+
+    <input type="text" id="tripName" placeholder="Trip Name (Goa Vacation)">
+    <input type="text" id="destination" placeholder="Destination">
+    <input type="date" id="travelDate">
+    <input type="text" id="activity" placeholder="Planned Activity">
+
+    <button onclick="addTrip()">Add Trip</button>
+</section>
+
+<section class="trip-list">
+    <h2>Your Travel Plans</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Trip</th>
+                <th>Destination</th>
+                <th>Date</th>
+                <th>Activity</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tripBody"></tbody>
+    </table>
+</section>
+
+<footer>
+    <p>© 2026 TravelBuddy | Plan. Explore. Enjoy 🌎</p>
+</footer>
+
+<script src="travelbuddy.js"></script>
+</body>
+</html>
